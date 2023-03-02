@@ -3,7 +3,7 @@
 
     <!--  bg -->
 <Div class="hero py-5 ps-5 "> 
-  <h1 class="h1  text-light py-3"> Rate Your <br>Favorite Doctor </h1>
+  <h1 class="h1  text-light py-3"> Rate Your <br>Favorite Doctor - by 6degrees</h1>
   <div class="gap-2 d-grid col-2">
   <button class="btn btn-secondary border-0 text-light" type="button"> Review</button>
 </Div></div>

@@ -38,7 +38,7 @@
     </div>
 
     <div class="col-lg-12  col-sm-12">
-   <h4><b>Pending Comments</b></h4>
+  <h4><b>Pending Comments</b></h4>   <!--This section only for authorized doctors  -->
    <div class="card" style="width: 35rem;">
     <div class="card-body">
       <p class="card-title"><b>Anonymous</b></p>
