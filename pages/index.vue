@@ -17,32 +17,32 @@
   <div class="col-lg-3 col-md-12 col-sm-12 m-3 ">
      <input class="form-control " list="datalistOptions" id="exampleDataList" placeholder="Name of doctor..">
      <datalist id="datalistOptions">
-      <option value="San Francisco"/>
-      <option value="New York"/>
-      <option value="Seattle"/>
-      <option value="Los Angeles"/>
-      <option value="Chicago"/>
+      <option value="Doctor1"/>
+      <option value="Doctor2"/>
+      <option value="Doctor3"/>
+      <option value="Doctor4"/>
+      <option value="Doctor5"/>
       
     </datalist>
   </div>
   <div class="col-lg-3 col-md-12 col-sm-12 m-3 ">
     <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Select Department..">
     <datalist id="datalistOptions">
-      <option value="San Francisco"/>
-      <option value="New York"/>
-      <option value="Seattle"/>
-      <option value="Los Angeles"/>
-      <option value="Chicago"/>
+      <option value="Doctor1"/>
+      <option value="Doctor2"/>
+      <option value="Doctor3"/>
+      <option value="Doctor4"/>
+      <option value="Doctor5"/>
     </datalist>
   </div>
   <div class="col-lg-3 col-md-12 col-sm-12 m-3">
     <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Select specialty..">
     <datalist id="datalistOptions">
-      <option value="San Francisco"/>
-      <option value="New York"/>
-      <option value="Seattle"/>
-      <option value="Los Angeles"/>
-      <option value="Chicago"/>
+      <option value="Doctor1"/>
+      <option value="Doctor2"/>
+      <option value="Doctor3"/>
+      <option value="Doctor4"/>
+      <option value="Doctor5"/>
     </datalist>
   </div>
   <div class="col  d-grid gap-2 m-3">
