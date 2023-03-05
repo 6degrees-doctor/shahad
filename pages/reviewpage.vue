@@ -110,7 +110,7 @@
       </div>
       <div class="modal-body">
         <label for="exampleFormControlTextarea1" class="form-label">Comment:</label>
-         <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Write your comment.."></textarea>
+         <textarea class="form-control" id="exampleFormControlTextarea2" rows="5" placeholder="Write your comment.."></textarea>
          <div class="col-md-12 col-md-12 col-12 d-grid gap-2  mt-4 ">
          <button class="btn btn-secondary  border-0 text-light">Send</button>
         </div>

@@ -19,14 +19,14 @@
 <h1>Get Touch With Us!</h1>
 
 <label for="exampleFormControlInput1" class="form-label">Name:</label>
-<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Name">
+<input type="text" class="form-control" id="contactname" placeholder="Enter Your Name">
 
 
 <label for="exampleFormControlInput1" class="form-label">Email:</label>
-<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+<input type="email" class="form-control" id="contactemail" placeholder="name@example.com">
 
 <label for="exampleFormControlTextarea1" class="form-label">Message:</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  <textarea class="form-control" id="conatctmessage" rows="3"></textarea>
 <div class="gap-2 d-grid col-12 col-lg-4 mt-4"> 
   <button class="btn btn-secondary">Send</button>
 </div>

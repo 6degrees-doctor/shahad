@@ -90,19 +90,19 @@
           <form class="row g-3">
             <div class="col-md-12">
               <label class="text-dark">Email:</label>
-              <input type="email" class="form-control" id="validationDefault01" placeholder="Enter Your Email" required>
+              <input type="email" class="form-control" id="validationDefault03" placeholder="Enter Your Email" required>
             </div>
             <div class="col-md-12">
               <label class="text-dark">Username:</label>
-              <input type="text" class="form-control" id="validationDefault01" placeholder="Enter Your Username" required>
+              <input type="text" class="form-control" id="validationDefault04" placeholder="Enter Your Username" required>
             </div>
             <div class="col-md-12">
               <label class="text-dark">Password:</label>
-              <input type="password" class="form-control" id="validationDefault02" placeholder="Enter Your Password" required>
+              <input type="password" class="form-control" id="validationDefault05" placeholder="Enter Your Password" required>
             </div>
             <div class="col-md-12">
               <label class="text-dark">Confirm Password:</label>
-              <input type="password" class="form-control" id="validationDefault02" placeholder="Enter Your Password" required>
+              <input type="password" class="form-control" id="validationDefault06" placeholder="Enter Your Password" required>
             </div>
         
             <div class="col-md-12 col-12 d-grid gap-2">
@@ -133,10 +133,10 @@
         <div class="modal-body">
           <form class="row g-3">
             <div class="col-md-12">
-              <input type="text" class="form-control" id="validationDefault01" placeholder="Enter Your Username" required>
+              <input type="text" class="form-control" id="validationDefault07" placeholder="Enter Your Username" required>
             </div>
             <div class="col-md-12">
-              <input type="tel" class="form-control" id="validationDefault02" placeholder="Enter Your PhoneNumber" required>
+              <input type="tel" class="form-control" id="validationDefault08" placeholder="Enter Your PhoneNumber" required>
             </div>
         
             <div class="col-md-12 col-12 d-grid gap-2">
@@ -144,7 +144,7 @@
             </div>
             <div class="col-12">
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck3">
                 <label class="form-check-label text-dark" for="invalidCheck2">
                   Remember Me?
                 </label>
@@ -171,7 +171,7 @@
           <form class="row g-3">
             <div class="col-md-12">
               
-              <input type="email" class="form-control" id="validationDefault01" placeholder="Enter The code number" required>
+              <input type="email" class="form-control" id="validationDefault09" placeholder="Enter The code number" required>
             </div>
         
         
