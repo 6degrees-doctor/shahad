@@ -12,7 +12,7 @@
 <div class="container mt-5">
 <div class="row shadow rowcolor py-5">
 <div class="col-lg-4 col-12">
-    <img class="img-fluid " src="image/about.jpg">
+    <img class="img-fluid " src="~/assets/images/about.jpg">
 </div>
 <div class="col-lg-8">
     <h1>About Us </h1>

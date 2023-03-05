@@ -13,7 +13,7 @@
 <div class="container   shadow ">
    <div class="row rowcolor mt-5 rounded ">
      <div class="col-lg-4 col-md-12 col-12 ps-5 m-2">
-      <img src="image/doc2.jpg " class="img-fluid rounded-circle shadow imgd"> 
+      <img src="~/assets/images/doc2.jpg" class="img-fluid rounded-circle shadow imgd"> 
      </div>
      <div class="vr d-none d-sm-block" style="background-color: #48A2B1;"></div>
      <div class="col-lg-3 col-md-12 col-12 m-2 mt-5 "  >
@@ -178,7 +178,7 @@
          <div class="card-body ">
            <div class="row ">
              <div class="col-lg-2 col-12 d-flex justify-content-center align-items-center ">
-               <img src="image/usericon.jpg"
+               <img src="~/assets/images/usericon.jpg"
                  class="rounded-circle usericon img-fluid "  />
              </div>
              <div class="col-lg-8 ">
@@ -205,7 +205,7 @@
          <div class="card-body ">
            <div class="row ">
              <div class="col-lg-2 d-flex justify-content-center align-items-center mb-4 mb-lg-0">
-               <img src="image/usericon.jpg"
+               <img src="~/assets/images/usericon.jpg"
                  class="rounded-circle img-fluid usericon"  />
              </div>
              <div class="col-lg-8 ">
@@ -233,7 +233,7 @@
          <div class="card-body ">
            <div class="row ">
              <div class="col-lg-2 d-flex justify-content-center align-items-center mb-4 mb-lg-0">
-               <img src="image/usericon.jpg"
+               <img src="~/assets/images/usericon.jpg"
                  class="rounded-circle img-fluid usericon"  />
              </div>
              <div class="col-lg-8 ">

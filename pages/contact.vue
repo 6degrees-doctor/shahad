@@ -12,7 +12,7 @@
 <div class="container shadow">
 <div class="row rowcolor mt-5 ps-5 py-5">
     <div class="col-lg-4 col-12">
-<img src="image/news.png" alt="" class="img-fluid mt-5">
+<img src="~/assets/images/news.png" alt="" class="img-fluid mt-5">
     </div>
    
 <div class="col-lg-8 col-12 mt-5 gap-2 d-grid">

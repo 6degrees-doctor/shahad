@@ -63,7 +63,7 @@
     </p>
     </div>
     <div class="col-lg-4 col-md-12 col-12 ps-lg-5 mt-md-5 ">
-     <img src="image/colimg.jpg" class="img-fluid colimg rounded" >
+     <img src="~assets/images/colimg.jpg" class="img-fluid colimg rounded" >
     </div>
   </div>
 
@@ -79,7 +79,7 @@
       <div class="col-md-4  d-flex justify-content-around">
           <div class="card p-3 text-start px-4 border-0 shadow">
               
-          <img src="image/doc1.jpg"  class="card-img-top  img-fluid " style="width: 17rem;" >
+          <img src="~assets/images/doc1.jpg"  class="card-img-top  img-fluid " style="width: 17rem;" >
                   
         
               <div class="card-body">
@@ -105,7 +105,7 @@
           
         <div class="card p-3 text-start px-4  border-0 shadow">
               
-          <img src="image/doc2.jpg"  class="card-img-top  img-fluid " style="width: 17rem;" >
+          <img src="~assets/images/doc2.jpg"  class="card-img-top  img-fluid " style="width: 17rem;" >
                   
         
               <div class="card-body">
@@ -132,7 +132,7 @@
           
         <div class="card p-3 text-start px-4  border-0 shadow">
               
-          <img src="image/doc4.jpg"  class="card-img-top img-fluid " style="width: 17rem;" >
+          <img src="~assets/images/doc4.jpg"  class="card-img-top img-fluid " style="width: 17rem;" >
                   
         
               <div class="card-body">
@@ -165,7 +165,7 @@
   <div class="col-md-4  d-flex justify-content-around">
       <div class="card p-3 text-start px-4  border-0 shadow">
           
-      <img src="image/doc2.jpg"  class="card-img-top  img-fluid " style="width: 17rem;" >
+      <img src="~assets/images/doc2.jpg"  class="card-img-top  img-fluid " style="width: 17rem;" >
               
     
           <div class="card-body">
@@ -192,7 +192,7 @@
       
     <div class="card p-3 text-start px-4  border-0 shadow">
           
-      <img src="image/doc5.jpg"  class="card-img-top  img-fluid " style="width: 17rem;" >
+      <img src="~assets/images/doc5.jpg"  class="card-img-top  img-fluid " style="width: 17rem;" >
               
     
           <div class="card-body">
@@ -220,7 +220,7 @@
       
     <div class="card p-3 text-start px-4  border-0 shadow">
           
-      <img src="image/doc1.jpg"  class="card-img-top  img-fluid  " style="width: 17rem;" >
+      <img src="~assets/images/doc1.jpg"  class="card-img-top  img-fluid  " style="width: 17rem;" >
               
     
           <div class="card-body">

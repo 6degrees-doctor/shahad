@@ -6,7 +6,7 @@
 
 
       <div class="col text-light">
-<img src="image/logo2.png" class="img-fluid" style="width: 8rem">
+<img src="~/assets/images/logo2.png" class="img-fluid" style="width: 8rem">
 <p class="text-light"> Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit, </p>
       </div>
 
