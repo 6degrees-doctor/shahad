@@ -2,15 +2,17 @@
   <div>
 
     <!--  bg -->
-<Div class="hero py-5 ps-5 "> 
+<div class="hero py-5 ps-5 "> 
   <h1 class="h1  text-light py-3"> Rate Your <br>Favorite Doctor - by 6degrees</h1>
   <div class="gap-2 d-grid col-2">
   <button class="btn btn-secondary border-0 text-light" type="button"> Review</button>
-</Div></div>
+</div>
+</div>
 <!-- End bg -->
 
 
 <!-- Search Bar  -->
+<div class="container">
 <div class="row py-4 search m-3 rounded"> 
   <h2 class="text-dark m-3"> Search for a doctor</h2>
   <hr>
@@ -28,26 +30,27 @@
   <div class="col-lg-3 col-md-12 col-sm-12 m-3 ">
     <input class="form-control" list="datalistOptions2" id="exampleDataList2" placeholder="Select Department..">
     <datalist id="datalistOptions2">
-      <option value="Doctor1"/>
-      <option value="Doctor2"/>
-      <option value="Doctor3"/>
-      <option value="Doctor4"/>
-      <option value="Doctor5"/>
+      <option value="Doctor1"></option>
+      <option value="Doctor2"></option>
+      <option value="Doctor3"></option>
+      <option value="Doctor4"></option>
+      <option value="Doctor5"></option>
     </datalist>
   </div>
   <div class="col-lg-3 col-md-12 col-sm-12 m-3">
     <input class="form-control" list="datalistOptions3" id="exampleDataList3" placeholder="Select specialty..">
     <datalist id="datalistOptions3">
-      <option value="Doctor1"/>
-      <option value="Doctor2"/>
-      <option value="Doctor3"/>
-      <option value="Doctor4"/>
-      <option value="Doctor5"/>
+      <option value="Doctor1"></option>
+      <option value="Doctor2"></option>
+      <option value="Doctor3"></option>
+      <option value="Doctor4"></option>
+      <option value="Doctor5"></option>
     </datalist>
   </div>
   <div class="col  d-grid gap-2 m-3">
    <button class="btn btn-secondary border-0 text-light"><i class="bi bi-search"></i> Search</button>
   </div>
+</div>
 </div>
 <!-- Search Bar -->
 
@@ -75,6 +78,7 @@
 
 <!-- Top rated section -->
 <h2 class="text-center m-5">Top rated</h2>
+<div class="container">
   <div class="row g-2  mt-5 mb-5 rowcolor  ">
       <div class="col-md-4  d-flex justify-content-around">
           <div class="card p-3 text-start px-4 border-0 shadow">
@@ -157,10 +161,12 @@
       
       
   </div>
+</div>
 <!-- End Top rated section -->
  
 <!-- Review list section -->
 <h2 class="text-center m-5"> Write a Review</h2>
+<div class="container">
 <div class="row g-2  mt-5 mb-5 rowcolor  ">
   <div class="col-md-4  d-flex justify-content-around">
       <div class="card p-3 text-start px-4  border-0 shadow">
@@ -249,6 +255,7 @@
   
   
 </div>
+</div>
 <!-- End Review list section -->
 
 
@@ -256,14 +263,14 @@
 <div class="   text-center p-5 rowcolor shadow" >
   <h1 class=""><b> Contact us now!</b></h1>
   <p> Fell free to contact us at any time and we will respond to you soon.</p>
-  
+  <div class="container">
   <div class="row g-3 justify-content-center ">
       <div class="col-lg-4 col-12 d-grid gap-2">
       
         <NuxtLink to="contact" ><button type="submit" class="btn btn-secondary border-0 shadow p-2 ps-5 px-5">Contact</button></NuxtLink>
       </div>
 
-         
+         </div>
      
     </div>
        

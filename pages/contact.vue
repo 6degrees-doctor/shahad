@@ -1,5 +1,6 @@
 <template>
 <div>
+  <div class="container">
     <div class="row bg ps-4 py-3">
 
         <div class="col d-flex ">
@@ -8,6 +9,7 @@
         <a class=" text-decoration-none text-dark ps-1" disabled >Active Page</a>
         </div>
         </div>
+      </div>
 
 <div class="container shadow">
 <div class="row rowcolor mt-5 ps-5 py-5">

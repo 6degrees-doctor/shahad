@@ -1,5 +1,7 @@
 <template>
     <div>
+       
+        <div class="container">
     <div class="row bg ps-4 py-3">
 
     <div class="col d-flex ">
@@ -7,6 +9,7 @@
     <NuxtLink to="about" class=" text-decoration-none text-light">About></NuxtLink>
     <a class=" text-decoration-none text-dark ps-1" disabled >Active Page</a>
     </div>
+</div>
 </div>
 
 <div class="container mt-5">
