@@ -145,7 +145,7 @@
             <div class="col-12">
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="invalidCheck3">
-                <label class="form-check-label text-dark" for="invalidCheck2">
+                <label class="form-check-label text-dark" for="invalidCheck3">
                   Remember Me?
                 </label>
                 <button class="btn-link btn text-decoration-underline ps-4 d-none" data-bs-target="#exampleModalToggle6"
@@ -159,11 +159,11 @@
       </div>
     </div>
   </div>
-  <div class="modal fade" id="exampleModalToggle6" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal fade" id="exampleModalToggle6" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalToggleLabel2"><b>Code Number</b></h1>
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel3"><b>Code Number</b></h1>
           <p>Please enter the code number that has sent to your phone number </p>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>

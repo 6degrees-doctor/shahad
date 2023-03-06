@@ -15,8 +15,8 @@
   <h2 class="text-dark m-3"> Search for a doctor</h2>
   <hr>
   <div class="col-lg-3 col-md-12 col-sm-12 m-3 ">
-     <input class="form-control " list="datalistOptions" id="exampleDataList1" placeholder="Name of doctor..">
-     <datalist id="datalistOptions">
+     <input class="form-control " list="datalistOptions1" id="exampleDataList1" placeholder="Name of doctor..">
+     <datalist id="datalistOptions1">
       <option value="Doctor1"/>
       <option value="Doctor2"/>
       <option value="Doctor3"/>
@@ -26,8 +26,8 @@
     </datalist>
   </div>
   <div class="col-lg-3 col-md-12 col-sm-12 m-3 ">
-    <input class="form-control" list="datalistOptions" id="exampleDataList2" placeholder="Select Department..">
-    <datalist id="datalistOptions">
+    <input class="form-control" list="datalistOptions2" id="exampleDataList2" placeholder="Select Department..">
+    <datalist id="datalistOptions2">
       <option value="Doctor1"/>
       <option value="Doctor2"/>
       <option value="Doctor3"/>
@@ -36,8 +36,8 @@
     </datalist>
   </div>
   <div class="col-lg-3 col-md-12 col-sm-12 m-3">
-    <input class="form-control" list="datalistOptions" id="exampleDataList3" placeholder="Select specialty..">
-    <datalist id="datalistOptions">
+    <input class="form-control" list="datalistOptions3" id="exampleDataList3" placeholder="Select specialty..">
+    <datalist id="datalistOptions3">
       <option value="Doctor1"/>
       <option value="Doctor2"/>
       <option value="Doctor3"/>
