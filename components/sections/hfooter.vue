@@ -21,7 +21,7 @@
 
       <div class="col  ">
         <h5><b> Links</b></h5> 
-<a class="text-light text-decoration-none a"  href="#"> Sign in as doctor</a><br>
+        <a class="text-light text-decoration-none a"  href="#"> Sign in</a>
 <a class="text-light text-decoration-none a"  href="#"> Register</a>
 
       </div>

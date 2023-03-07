@@ -11,7 +11,7 @@
         </div>
       </div>
     </div>
-    s
+    
     <div class="container   shadow ">
       <div class="row rowcolor mt-5 rounded ">
         <div class="col-lg-4 col-md-12 col-12 ps-5 m-2">

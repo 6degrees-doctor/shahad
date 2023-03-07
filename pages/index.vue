@@ -4,9 +4,13 @@
     <!--  bg -->
     <div class="hero py-5 ps-5 ">
       <h1 class="h1  text-light py-3"> Rate Your <br>Favorite Doctor - by 6degrees</h1>
-      <div class="gap-2 d-grid col-2">
-        <button class="btn btn-secondary border-0 text-light" type="button"> Review</button>
-      </div>
+     
+       <NuxtLink to="reviewpage" class="text-decoration-none"> 
+         <div class="gap-2 d-grid col-2 ">
+        <button class="btn btn-secondary border-0 text-light " type="button"> Review</button>
+       </div>
+      </NuxtLink>
+     
     </div>
     <!-- End bg -->
 
@@ -266,22 +270,7 @@
 
 
 
-    <div class="   text-center p-5 rowcolor shadow">
-      <h1 class=""><b> Contact us now!</b></h1>
-      <p> Fell free to contact us at any time and we will respond to you soon.</p>
-      <div class="container">
-        <div class="row g-3 justify-content-center ">
-          <div class="col-lg-4 col-12 d-grid gap-2">
-
-            <NuxtLink to="contact"><button type="submit"
-                class="btn btn-secondary border-0 shadow p-2 ps-5 px-5">Contact</button></NuxtLink>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
+   
 
 
   </div>

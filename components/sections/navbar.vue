@@ -125,87 +125,9 @@
                 </div>
               </div>
             </div>
-            <button class="btn btn-link text-dark  text-decoration-none" data-bs-toggle="modal" href="#exampleModalToggle"
+            <button class="btn btn-secondary  border-0 text-light " data-bs-toggle="modal" href="#exampleModalToggle"
               role="button">Sign in</button>
 
-
-            <!-- Sign in as doctor -->
-
-            <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
-              tabindex="-1">
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5 text-dark" id="exampleModalToggleLabel"><b>Sign in as doctor</b></h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <form class="row g-3">
-                      <div class="col-md-12">
-                        <input type="text" class="form-control" id="validationDefault07" placeholder="Enter Your Username"
-                          required>
-                      </div>
-                      <div class="col-md-12">
-                        <input type="tel" class="form-control" id="validationDefault08"
-                          placeholder="Enter Your PhoneNumber" required>
-                      </div>
-
-                      <div class="col-md-12 col-12 d-grid gap-2">
-                        <button class="btn btns border-0 btn-primary" style="background-color: #48A2B1;"
-                          type="submit"><b>Sign in</b></button>
-                      </div>
-                      <div class="col-12">
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck3">
-                          <label class="form-check-label text-dark" for="invalidCheck3">
-                            Remember Me?
-                          </label>
-                          <button class="btn-link btn text-decoration-underline ps-4 d-none"
-                            data-bs-target="#exampleModalToggle6" data-bs-toggle="modal">Code Number</button>
-                        </div>
-
-                      </div>
-                    </form>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-            <div class="modal fade" id="exampleModalToggle6" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3"
-              tabindex="-1">
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel3"><b>Code Number</b></h1>
-                    <p>Please enter the code number that has sent to your phone number </p>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <form class="row g-3">
-                      <div class="col-md-12">
-
-                        <input type="email" class="form-control" id="validationDefault09"
-                          placeholder="Enter The code number" required>
-                      </div>
-
-
-                      <div class="col-md-12 col-12 d-grid gap-2">
-                        <button class="btn btns border-0 btn-primary" style="background-color: #48A2B1;"
-                          type="submit"><b>OK</b></button>
-                      </div>
-
-
-                    </form>
-                  </div>
-                  <div class="modal-footer">
-                    <button class="btn " data-bs-target="#exampleModalToggle3" data-bs-toggle="modal">Change Phone
-                      Number?</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <button class="btn btn-secondary  border-0 text-light" data-bs-toggle="modal" href="#exampleModalToggle3"
-              role="button">Sign as doctor</button>
 
           </span>
         </div>
@@ -236,15 +158,13 @@ export default {
   color: #3C3737;
 }
 
-.nav-link,
-.btn-link {
+.nav-link {
   display: inline-block;
   position: relative;
   color: #48A2B1;
 }
 
-.nav-link::after,
-.btn-link::after {
+.nav-link::after{
   content: '';
   position: absolute;
   width: 100%;
@@ -257,14 +177,10 @@ export default {
   transition: transform 0.25s ease-out;
 }
 
-.nav-link:hover::after,
-.btn-link:hover::after {
+.nav-link:hover::after{
   transform: scaleX(1);
   transform-origin: bottom left;
 }
 
-.btn-link:hover {
-  opacity: 0.6;
-  color: #48A2B1;
 
-}</style>
+</style>
