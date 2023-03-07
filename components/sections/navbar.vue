@@ -15,16 +15,8 @@
               <NuxtLink to="/" class="nav-link home ms-4 "><b>Home</b>
               </NuxtLink>
             </li>
-            <li class="nav-item ">
-              <a href="about" class="nav-link a ms-4"> About
-              </a>
-            </li>
             <li class="nav-item">
               <NuxtLink to="reviewpage" class="nav-link a ms-4">Review
-              </NuxtLink>
-            </li>
-            <li class="nav-item">
-              <NuxtLink to="contact" class="nav-link a ms-4">Contact
               </NuxtLink>
             </li>
           </ul>

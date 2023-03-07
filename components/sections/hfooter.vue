@@ -13,9 +13,9 @@
       <div class="col  ">
         <h5><b>Pages</b> </h5> 
 <NuxtLink to="/" class="text-decoration-none"><a class="text-light text-decoration-none a" href="#"> Homepage</a></NuxtLink><br>
-<NuxtLink to="about" class="text-decoration-none"><a class="text-light text-decoration-none a"  href="#"> About us</a></NuxtLink><br>
+
 <NuxtLink to="reviewpage" class="text-decoration-none"><a class="text-light text-decoration-none a"  href="#"> Review</a></NuxtLink><br>
-<NuxtLink to="contact" class="text-decoration-none"><a class="text-light text-decoration-none a"  href="#"> Contact</a></NuxtLink><br>
+
        
       </div>
 
