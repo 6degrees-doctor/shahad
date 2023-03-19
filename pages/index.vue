@@ -267,19 +267,29 @@
       </div>
     </div>
     <!-- End Review list section -->
-
-
-
-   
-
-
-  </div>
+    <!-- {{ this.comments.data[0].attributes.name }} -->
+ </div>
 </template>
 
 <script>
 export default {
-
-}
+    data(){
+        return {
+            comments: [],
+        }
+    },
+    async mounted(){
+          try {
+            // fetch data from strapi
+            const comments = await fetch('http://localhost:1337/api/comments')
+            const newData = await comments.json();
+            this.comments = newData;
+          } catch (error) {
+            console.log(error)
+          }
+        }
+    }
+  
 </script>
 
 <style>

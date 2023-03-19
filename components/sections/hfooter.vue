@@ -21,8 +21,9 @@
 
       <div class="col  ">
         <h5><b> Links</b></h5> 
-        <a class="text-light text-decoration-none a"  href="#"> Sign in</a> <br>
-<a class="text-light text-decoration-none a"  href="#"> Register</a>
+        <NuxtLink to="login" class="text-light text-decoration-none a">Sign in</NuxtLink>
+        <NuxtLink to="register" class="text-light text-decoration-none a">Register</NuxtLink>
+        
 
       </div>
 

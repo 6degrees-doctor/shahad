@@ -1,5 +1,33 @@
 export default {
-  ssr:false,
+  axios: {
+    baseURL: process.env.STRAPI_URL || 'http://localhost:1337/api'
+  },
+
+  auth: {
+    // Options
+    strategies: {
+      local: {
+        token: {
+          property: 'jwt',
+        },
+        user: {
+          property: false,
+        },
+        endpoints: {
+          login: {
+            url: 'auth/local',
+            method: 'post',
+          },
+          user: {
+            url: 'users/me',
+            method: 'get',
+          },
+          logout: false,
+        },
+      },
+    },
+  },
+  ssr:true,
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'testsh',
@@ -51,9 +79,19 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/strapi',
+    '@nuxtjs/axios',
+    '@nuxtjs/auth-next'
   ],
 
+  strapi: {
+    url: 'http://localhost:1337'
+   
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    transpile: [
+      'defu'
+    ]
   }
 }
