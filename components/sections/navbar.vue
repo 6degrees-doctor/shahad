@@ -23,15 +23,16 @@
           </ul>
           <span class="navbar-text">
 
-            <a
-            v-if="isAuthenticated"
-            class="text-dark p-2 hover:bg-gray-700"
-            href="/logout"
-            @click.prevent="userLogout"
-            >Logout</a>
 
-<a  v-if="isAuthenticated" href="userprofile"> 
-  <i class="bi bi-person-circle  iconuser " ></i></a>
+<a  v-if="isAuthenticated" > 
+
+   Welcome back! <b>{{ loggedInUser.username }}</b></a>
+  <a
+  v-if="isAuthenticated"
+  class="text-danger p-2  "
+  href="/logout"
+  @click.prevent="userLogout"
+  >Logout</a>
 
             <NuxtLink
             v-if="!isAuthenticated"
@@ -53,7 +54,7 @@
 import { mapGetters } from 'vuex'
     export default {
       computed: {
-        ...mapGetters(['isAuthenticated']),
+        ...mapGetters(['isAuthenticated' , 'loggedInUser']),
       },
       methods: {
         async userLogout() {

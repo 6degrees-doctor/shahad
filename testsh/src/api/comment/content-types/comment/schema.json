@@ -13,10 +13,35 @@
   "pluginOptions": {},
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "comments": {
-      "type": "text"
+      "type": "text",
+      "required": true
+    },
+    "rate": {
+      "type": "integer",
+      "max": 5,
+      "min": 1
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "pending",
+        "approval",
+        "rejected",
+        "banned",
+        "deleted"
+      ],
+      "default": "pending",
+      "required": true
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "comments"
     }
   }
 }

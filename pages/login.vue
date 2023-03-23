@@ -5,35 +5,35 @@
   
           <div class="col d-flex ">
             <NuxtLink to="/" class=" text-decoration-none text-light">Home></NuxtLink>
-            <NuxtLink to="login" class=" text-decoration-none text-light">Sign in</NuxtLink>
+            <NuxtLink to="login" class=" text-decoration-none text-light">Sign in></NuxtLink>
             <a class=" text-decoration-none text-dark ps-1" disabled>Active Page</a>
           </div>
         </div>
       </div> 
 
 
-<div class="container shadow mt-5 w-50">
-    <div class="row rowcolor rounded mt-5 d-flex justify-content-center ">
-<form @submit.prevent="userLogin" >
+<div class="container-fluid shadow mt-5 " >
+    <div class="row rowcolor rounded mt-5  ">
+  <h1 class="text-dark text-center">Sign in </h1>
+  <hr>
+<form @submit.prevent="userLogin" class=" d-flex justify-content-center">
 
-   <h1 class="text-dark">Sign in </h1>
-    <div id="emailHelp" class="form-text">
-    <div v-if="err"
-    class=" p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 " role="alert" >
-    {{ err }}
-  </div>   
-</div>
+   
 
  <div class="col-lg-8 col-md-12 col-12 ">
-
+ <div v-if="err"
+    class="  mb-4 text-sm text-danger  " role="alert" >
+    {{ err }}
+ 
+</div>
 
     <div class="mb-3">
-    <label for="email" class="form-label" >Email</label>
+    <label for="email" class="form-label" >Email:</label>
     <input v-model="email" placeholder="Enter your email" class="form-control" type="email" required > 
 </div>
 
 <div class="mb-3">
-    <label for="password" >password</label>
+    <label for="password" >password:</label>
     <input v-model="password" type="password" placeholder="Enter your password" class="form-control" required > 
     </div>
 
@@ -42,21 +42,30 @@
         <label class="form-check-label" for="exampleCheck1">Remember me</label>
       </div> 
     
-          <button class="btn btn-secondary border-0" type="submit" >Sign in </button>
-<NuxtLink to="register">Don't have an account yet?</NuxtLink>
-          <div class=" d-flex align-items-center my-4">
-            <hr>
-            <p class="text-center fw-bold mx-3 mb-0 text-muted">OR</p>
+       <div class="col gap-2 d-grid text-center">
+          <button class="btn btn-secondary border-0 " type="submit" >Sign in </button>
+       
+<NuxtLink to="register" class="text-dark ">Don't have an account yet?</NuxtLink>
           </div>
 
-          <a class="btn btn-primary btn-lg btn-block" style="background-color: #3b5998" href="#!"
+<div class=" my-4 text-center "> 
+         <p class="fw-bold mx-3 mb-0 text-muted">OR </p>  
+          </div>
+
+          <div class="col gap-2 d-grid  ">
+            <a class="btn btn-primary btn-lg btn-block border-0" style="background-color: #CA332A" href="#!"
             role="button">
-            <i class="bi bi-facebook"></i>Continue with Facebook
+            <i class="bi bi-google socialmedia "></i>Continue with Gmail
           </a>
-          <a class="btn btn-primary btn-lg btn-block" style="background-color: #55acee" href="#!"
+          <a class="btn btn-primary btn-lg btn-block border-0" style="background-color: #3b5998" href="#!"
             role="button">
-            <i class="bi bi-twitter"></i>Continue with Twitter</a>
-      </div>
+            <i class="bi bi-facebook socialmedia"></i>Continue with Facebook
+          </a>
+          <a class="btn btn-primary btn-lg btn-block border-0" style="background-color: #55acee" href="#!"
+            role="button">
+            <i class="bi bi-twitter socialmedia"></i>Continue with Twitter</a>
+          </div>
+          </div>
     </form>
 </div>
 </div>

@@ -4,13 +4,13 @@
     <!--  bg -->
     <div class="hero py-5 ps-5 ">
       <h1 class="h1  text-light py-3"> Rate Your <br>Favorite Doctor - by 6degrees</h1>
-     
-       <NuxtLink to="reviewpage" class="text-decoration-none"> 
-         <div class="gap-2 d-grid col-2 ">
-        <button class="btn btn-secondary border-0 text-light " type="button"> Review</button>
-       </div>
+
+      <NuxtLink to="reviewpage" class="text-decoration-none">
+        <div class="gap-2 d-grid col-2 ">
+          <button class="btn btn-secondary border-0 text-light " type="button"> Review</button>
+        </div>
       </NuxtLink>
-     
+
     </div>
     <!-- End bg -->
 
@@ -85,95 +85,62 @@
 
     <!-- Top rated section -->
     <h2 class="text-center m-5">Top rated</h2>
-    <div class="container">
+    <div class="container-fluid w-100">
       <div class="row g-2  mt-5 mb-5 rowcolor  ">
         <div class="col-md-4  d-flex justify-content-around">
-          <div class="card p-3 text-start px-4 border-0 shadow">
-
-            <img src="~/assets/images/doc1.jpg" class="card-img-top  img-fluid " style="width: 17rem;">
 
 
-            <div class="card-body">
 
-              <div class="card-title star">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star"></i>
-                <span class="text-dark">40</span>
+
+
+
+
+
+          <div class="card p-3 text-start px-4 border-0 shadow" v-for="(user, key) in this.users" :key="key">
+
+            <div v-if="user.is_doctor">
+              <img :src="`http://localhost:1337${user.avatar.formats.thumbnail.url}`" class="card-img-top  img-fluid "
+                style="width: 17rem;">
+
+
+              <div class="card-body">
+
+                <div class="card-title star">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <span class="text-dark">40</span>
+                </div>
+
+
+
+
+
+                <h5 class="mb-0">
+                  {{ user.username }}
+                </h5>
+                <p class="card-text">{{ user.doctor_information.hospital }}</p>
               </div>
-              <h5 class="mb-0">Dr.Mai Hardy</h5>
-              <p class="card-text">Internal Medicine</p>
+
+
+
             </div>
-
-
-
-          </div>
-        </div>
-
-        <div class="col-md-4  d-flex justify-content-around">
-
-          <div class="card p-3 text-start px-4  border-0 shadow">
-
-            <img src="~/assets/images/doc2.jpg" class="card-img-top  img-fluid " style="width: 17rem;">
-
-
-            <div class="card-body">
-
-              <div class="card-title star">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star"></i>
-                <span class="text-dark">40</span>
-              </div>
-              <h5 class="mb-0">Dr.Mai Hardy</h5>
-              <p class="card-text">Internal Medicine</p>
-            </div>
-
-
-
           </div>
 
-        </div>
 
-        <div class="col-md-4  d-flex justify-content-around">
-
-          <div class="card p-3 text-start px-4  border-0 shadow">
-
-            <img src="~/assets/images/doc4.jpg" class="card-img-top img-fluid " style="width: 17rem;">
-
-
-            <div class="card-body">
-
-              <div class="card-title star">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star"></i>
-                <span class="text-dark">40</span>
-              </div>
-              <h5 class="mb-0">Dr.Mai Hardy</h5>
-              <p class="card-text">Internal Medicine</p>
-            </div>
-
-
-
-          </div>
 
         </div>
-
-
       </div>
+
+
     </div>
     <!-- End Top rated section -->
 
     <!-- Review list section -->
     <h2 class="text-center m-5"> Write a Review</h2>
-    <div class="container">
+    <div class="container-fluid w-100">
       <div class="row g-2  mt-5 mb-5 rowcolor  ">
         <div class="col-md-4  d-flex justify-content-around">
           <div class="card p-3 text-start px-4  border-0 shadow">
@@ -268,28 +235,49 @@
     </div>
     <!-- End Review list section -->
     <!-- {{ this.comments.data[0].attributes.name }} -->
- </div>
+  </div>
 </template>
 
 <script>
 export default {
-    data(){
-        return {
-            comments: [],
-        }
-    },
-    async mounted(){
-          try {
-            // fetch data from strapi
-            const comments = await fetch('http://localhost:1337/api/comments')
-            const newData = await comments.json();
-            this.comments = newData;
-          } catch (error) {
-            console.log(error)
-          }
-        }
+  data() {
+    return {
+      users: [],
+      comments: [],
     }
-  
+  },
+  methods: {
+    async getInformation(endpoint, targetVar) {
+
+      try {
+        // fetch data from strapi
+        const comments = await fetch(`${endpoint}`)
+        const newData = await comments.json();
+        // targetVar = newData;
+
+        if (targetVar == 'comments') {
+          this.comments = newData;
+        } else if (targetVar == 'users') {
+          this.users = newData;
+        }
+        // console.log(`${targetVar[0].username}`);
+      } catch (error) {
+        console.log(error)
+      }
+
+    }
+  },
+  async mounted() {
+
+    // Better way to call axois or any group of endpoints
+    await this.getInformation('http://localhost:1337/api/comments', 'comments');
+    await this.getInformation('http://localhost:1337/api/users?populate=*', 'users');
+    console.log(this.users);
+    console.log(this.comments);
+
+  }
+}
+
 </script>
 
 <style>

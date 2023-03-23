@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "doctor_informations",
+  "info": {
+    "singularName": "doctor-information",
+    "pluralName": "doctor-informations",
+    "displayName": "doctor_information",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hospital": {
+      "type": "string",
+      "required": true
+    },
+    "specialty": {
+      "type": "string",
+      "required": true
+    },
+    "department": {
+      "type": "string",
+      "required": true
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "doctor_information"
+    }
+  }
+}

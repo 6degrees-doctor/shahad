@@ -11,13 +11,16 @@
         </div>
       </div> 
 
-      <div class="container">
-        <h1>Sign up</h1>
-            <form @submit.prevent="userRegister">
+      <div class="container shadow mt-5 ">
+        <div class="row rowcolor rounded   "> 
+        <h1 class="text-dark text-center">Sign up</h1>
+        <hr>
+            <form @submit.prevent="userRegister" class=" d-flex justify-content-center">
+              <div class="col-lg-8 col-md-12 col-12 ">
                 <div
             v-if="err"
             class="
-              p-4
+              text-danger
               mb-4
               text-sm text-red-700
               bg-red-100
@@ -31,17 +34,13 @@
           <div
             v-if="success"
             class="
-              p-4
+            text-success
               mb-4
-              text-sm text-green-700
-              bg-green-100
-              rounded-lg
-              dark:bg-green-200 dark:text-green-800
             "
             role="alert"
           >
             Your account has been created successfully you can now
-            <NuxtLink class="font-medium" to="login">Login</NuxtLink>
+            <NuxtLink class="font-medium text-dark" to="login">Login</NuxtLink>
           </div>
                 <div class="col">
                     <div class="mb-3">
@@ -58,11 +57,12 @@
                   <label for="password" class="form-label">Password</label>
                   <input v-model="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Your Password">
                 </div>
-              
-                <button type="submit" class="btn btn-primary">Register</button>
-        </div>
+                <div class="col gap-2 d-grid text-center my-5 ">
+                <button type="submit" class="btn btn-secondary border-0 ">Register</button>
+                </div>
+        </div></div>
           </form>
-        
+        </div>
 
             </div>
         </div>

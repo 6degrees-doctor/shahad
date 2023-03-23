@@ -57,6 +57,14 @@ export default {
         integrity:"sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" ,
         crossorigin:"anonymous"
       },
+      {
+         src:'/static/js/ratestar.js'
+      },
+      {
+        src:'//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'
+      }
+      
+     
     ]
   },
 
